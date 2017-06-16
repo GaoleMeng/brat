@@ -2700,9 +2700,8 @@ var AnnotatorUI = (function($, window, undefined) {
       /* BEGIN delete button - related */
 
       $("#retrain").click(function(){
-        console.log(coll)
-        console.log(doc)
-        console.log("sdfsdf")
+          console.log(coll);
+          console.log(doc);
           var retrianaction = {
             action: 'retrainmodel',
             collection: coll,
