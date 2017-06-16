@@ -2596,6 +2596,8 @@ var AnnotatorUI = (function($, window, undefined) {
         // hiding them
         rapidSpanForm.parent().find('*').blur();
         dispatcher.post('hideForm');
+        console.log(doc)
+        console.log(coll)
 
         if (type == "") {
           // empty type value signals the special case where the user
@@ -2611,6 +2613,9 @@ var AnnotatorUI = (function($, window, undefined) {
           dispatcher.post('logAction', ['normalSpanSelected']);
         } else {
           // normal type selection; submit createSpan with the selected type.
+
+     
+
           $.extend(rapidSpanOptions, {
             action: 'createSpan',
             collection: coll,
@@ -2693,6 +2698,19 @@ var AnnotatorUI = (function($, window, undefined) {
 
 
       /* BEGIN delete button - related */
+
+      $("#retrain").click(function(){
+        console.log(coll)
+        console.log(doc)
+        console.log("sdfsdf")
+          var retrianaction = {
+            action: 'retrainmodel',
+            collection: coll,
+            'document': doc
+          }
+          dispatcher.post('ajax', [retrianaction, 'retrainmodel']);
+      })
+
 
       $('#delete_document_button').click(function() {
         if (!doc) {

@@ -35,6 +35,9 @@ from search import search_text, search_entity, search_event, search_relation, se
 from predict import suggest_span_types
 from undo import undo
 from tag import tag
+
+from retrainmodel import dumpy
+
 from delete import delete_document, delete_collection
 from norm import norm_get_name, norm_search, norm_get_data
 
@@ -67,6 +70,8 @@ DISPATCHER = {
         'createArc': create_arc,
         'reverseArc': reverse_arc,
         'deleteArc': delete_arc,
+
+        'retrainmodel': dumpy,
 
         # NOTE: search actions are redundant to allow different
         # permissions for single-document and whole-collection search.

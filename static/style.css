@@ -20,6 +20,20 @@
   margin: 20px;
 }
 
+#bigtable{
+  display:inline;
+  width: 300px;
+}
+
+#svg{
+  width: 100px;
+  float: left;
+  position: relative;
+}
+#classifier{
+  width: 30%;
+}
+
 .redacted {
 /*  background-color: #ffcccc; */
   background-color: #cccccc;

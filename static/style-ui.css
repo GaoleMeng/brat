@@ -31,6 +31,20 @@ body .ui-widget {
   overflow: hidden;
   white-space: nowrap;
 }
+/*
+#bigtable{
+  display:inline;
+  width: 300px;
+}
+
+#svg{
+  width: 100px;
+  float: left;
+  position: relative;
+}
+#classifier{
+  width: 30%;
+}*/
 
 #pulldown {
   display: none;
@@ -46,6 +60,9 @@ body .ui-widget {
   float: right;
 }
 #options_button {
+  float: right;
+}
+#retrain {
   float: right;
 }
 

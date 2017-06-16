@@ -1433,8 +1433,11 @@ var VisualizerUI = (function($, window, undefined) {
           }
       });
       $('#options_button').click(function() {
+        console.log("options")
         dispatcher.post('showForm', [optionsForm]);
       });
+
+
       // make nice-looking buttons for checkboxes and radios
       $('#options_form').find('input[type="checkbox"]').button();
       $('#options_form').find('.radio_group').buttonset();
