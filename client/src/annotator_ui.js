@@ -2702,12 +2702,18 @@ var AnnotatorUI = (function($, window, undefined) {
       $("#retrain").click(function(){
           console.log(coll);
           console.log(doc);
+
+          
           var retrianaction = {
             action: 'retrainmodel',
             collection: coll,
             'document': doc
           }
           dispatcher.post('ajax', [retrianaction, 'retrainmodel']);
+          
+
+
+
       })
 
 
